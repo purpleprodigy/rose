@@ -1,0 +1,535 @@
+/* ## Menus
+--------------------------------------------- */
+
+.menu {
+	display: flex;
+	width: 100%;
+	font-size: 1.6rem;
+	font-weight: $bolder;
+	text-align: left;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@include clearfix;
+
+	@include breakpoint(md) {
+		font-size: 1.4rem;
+	}
+
+	.right {
+		margin-left: auto;
+	}
+
+	.rss,
+	.date,
+	.search,
+	.twitter {
+		display: flex;
+		margin-top: 1em;
+		margin-left: 0;
+		align-items: center;
+
+		@include breakpoint(md) {
+			margin-top: 0;
+			margin-left: 0.618em;
+		}
+
+		@include breakpoint(xl) {
+			margin-left: 1.5em;
+		}
+	}
+
+	.rss {
+		margin-left: 0;
+
+		a {
+			margin-left: 1em;
+		}
+	}
+}
+
+.menu-item {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 1rem 0;
+	order: -1;
+
+	@include breakpoint(md) {
+		display: flex;
+		width: auto;
+		height: 10rem;
+		padding: 0 0.618em;
+		align-items: center;
+		order: initial;
+
+		.shrink & {
+			height: 7rem;
+		}
+
+		&:first-of-type > a {
+			padding-left: 0;
+		}
+
+		&:last-of-type {
+
+			a {
+				padding-right: 0;
+			}
+		}
+	}
+
+	@include breakpoint(lg) {
+		padding: 0 1em;
+	}
+
+	&.button {
+		display: flex;
+		margin: 1em 0;
+		padding: 0;
+		background: transparent;
+		box-shadow: none;
+		font-size: 1.2rem;
+		align-items: center;
+
+		@include breakpoint(md) {
+			margin: 0 0 0 1em;
+		}
+
+		&:last-of-type {
+
+			a {
+				padding-right: 3em;
+			}
+		}
+
+		a {
+
+			@include gradient;
+			padding: 1em 3em;
+			border-radius: 9rem;
+			color: $white;
+
+			.shrink & {
+				color: $white;
+			}
+		}
+
+		a:hover,
+		a:focus,
+		&.current-menu-item > a {
+			color: $white;
+			box-shadow: inset 0 0 0 9rem rgba($black, 0.1);
+		}
+	}
+
+	a {
+		display: inline-block;
+		margin: 2px;
+		color: $dark;
+		text-decoration: none;
+
+		@include transition;
+	}
+
+	a:hover,
+	a:focus,
+	&.current-menu-item > a {
+		color: $accent;
+	}
+
+	span {
+		display: block;
+	}
+}
+
+/* ## Sub Menus
+--------------------------------------------- */
+
+.sub-menu {
+	display: none;
+
+	@include clearfix;
+
+	@include breakpoint(md) {
+		position: absolute;
+		z-index: 99;
+		top: 100%;
+		left: 0;
+		width: 20rem;
+		margin-left: -1em;
+		padding: 1em 0;
+		border: $site-border;
+		border-radius: $site-radius;
+		background-color: $light;
+	}
+
+	&:before {
+		display: none;
+		position: absolute;
+		z-index: 98;
+		top: -0.5rem;
+		left: 3rem;
+		width: 1rem;
+		height: 1rem;
+		border-top: $site-border;
+		border-left: $site-border;
+		opacity: 1;
+		background-color: $light;
+		content: "";
+		transition-delay: 0.3s;
+		transform: rotate(45deg);
+
+		@include breakpoint(md) {
+			display: block;
+		}
+	}
+
+	.menu-item {
+		width: 100%;
+		height: auto;
+		padding: 0.5em 0;
+
+		@include breakpoint(md) {
+			height: auto;
+			padding: 0.5em 1em;
+		}
+
+		&:first-of-type {
+			margin-top: 1em; // Slide toggle fix.
+
+			@include breakpoint(md) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	a {
+		padding-left: 0.618em;
+
+		@include breakpoint(md) {
+			position: relative;
+			padding: 0;
+			color: $medium;
+			word-wrap: break-word;
+		}
+	}
+
+	.sub-menu {
+		padding-left: 1em;
+
+		@include breakpoint(md) {
+			top: -0.5em;
+			left: -0.1rem;
+			margin: -0.1rem 0 0 19.9rem;
+			padding-left: 0;
+			border: $site-border;
+		}
+	}
+}
+
+/* ## Specific Menus
+--------------------------------------------- */
+
+.nav-primary,
+.nav-secondary {
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	right: -40rem;
+	bottom: 0;
+	width: 93vw;
+	max-width: 40rem;
+	height: 100vh;
+	margin: 0;
+	padding: 0 4rem;
+	border-top: $site-border;
+	border-bottom: $site-border;
+	background-color: $white;
+
+	@include transition;
+
+	@include breakpoint(sm) {
+		right: calc(-40rem + -6vw);
+	}
+
+	@include breakpoint(md) {
+		display: block;
+		overflow: visible;
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+		width: auto;
+		max-width: none;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&.activated {
+		right: 0;
+		left: auto;
+		box-shadow: 0 0 4rem rgba($dark, 0.2);
+
+		@include breakpoint(sm) {
+			right: -6vw;
+		}
+
+		@include breakpoint(md) {
+			right: auto;
+			box-shadow: none;
+		}
+	}
+
+	.no-js & {
+		display: block;
+		position: relative;
+		right: auto;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		border: 0;
+
+		@include breakpoint(md) {
+			display: block;
+			width: auto;
+		}
+
+		.wrap {
+			padding: 0;
+		}
+
+		.menu {
+			padding: 0;
+		}
+
+		.menu-item {
+			display: inline-flex;
+			width: auto;
+			padding-right: 1rem;
+		}
+	}
+
+	.menu {
+		position: relative;
+		padding: 5em 0 7.5em;
+
+		@include breakpoint(md) {
+			padding: 0;
+		}
+	}
+}
+
+.nav-secondary {
+	width: 100%;
+
+	@include breakpoint(md) {
+		width: 100%;
+		border-top: 1px solid rgba($gray, 0.3);
+	}
+
+	.menu-item {
+
+		@include breakpoint(md) {
+			height: 6rem;
+
+			.sticky-header .shrink & {
+				height: 5rem;
+			}
+		}
+	}
+
+	.menu {
+
+		> .menu-item {
+
+			@include breakpoint(md) {
+
+				&:first-of-type {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+
+		.menu-item {
+			height: auto;
+		}
+	}
+}
+
+.site-footer {
+
+	.menu {
+		justify-content: center;
+		margin-bottom: 0;
+		font-size: 1.4rem;
+	}
+
+	.menu-item {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+
+		&:last-of-type {
+			margin-bottom: 0;
+
+			a {
+				margin-bottom: 2px;
+			}
+		}
+
+		a {
+			margin-bottom: 1em;
+			padding: 0;
+			color: $body;
+		}
+	}
+
+	.menu-item a:hover,
+	.menu-item a:focus,
+	.menu-item.current-menu-item > a {
+		color: $accent;
+	}
+}
+
+/* ## Menu Toggle
+--------------------------------------------- */
+
+.menu-toggle {
+	display: block;
+	position: relative;
+	z-index: 1;
+	height: auto;
+	margin-right: -0.5em;
+	padding: 1em 0.5em;
+	color: $dark;
+	background: transparent;
+	box-shadow: none;
+	cursor: pointer;
+
+	@include breakpoint(md) {
+		display: none;
+	}
+
+	&:hover,
+	&:focus {
+		color: $dark;
+		background: none;
+		box-shadow: none;
+	}
+
+	&.activated,
+	.shrink & {
+		color: $dark;
+
+		span {
+			background: $dark;
+
+			&:before,
+			&:after {
+				background: $dark;
+			}
+		}
+	}
+
+	span {
+		display: block;
+		float: right;
+		position: relative;
+		width: 2rem;
+		height: 2px;
+		border-radius: $site-radius;
+		background: $dark;
+
+		&:before,
+		&:after {
+			display: block;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			border-radius: $site-radius;
+			background-color: $dark;
+			content: " ";
+		}
+
+		&:before {
+			top: -0.5rem;
+			transition: top 0.2s 0.2s, transform 0.2s 0s;
+		}
+
+		&:after {
+			bottom: -0.5rem;
+			transition: bottom 0.2s 0.2s, transform 0.2s 0s;
+		}
+	}
+
+	&.activated span {
+		background: none;
+
+		&:before {
+			top: 0;
+			transition: top 0.2s 0s, transform 0.2s 0.2s;
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			bottom: 0;
+			transition: bottom 0.2s 0s, transform 0.2s 0.2s;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+/* ## Sub Menu Toggle
+--------------------------------------------- */
+
+.sub-menu-toggle {
+	position: absolute;
+	top: 0.1em;
+	right: 3em;
+	height: auto;
+	margin: 0 -1em;
+	padding: 1em;
+	background: none;
+	box-shadow: none;
+
+	@include breakpoint(md) {
+		display: none;
+	}
+
+	&:hover,
+	&:focus {
+		background: none;
+		box-shadow: none;
+	}
+
+	&:focus {
+		outline: $site-outline;
+	}
+
+	&:before {
+		display: block;
+		margin: 0.2rem 0 -0.2rem;
+		border: 0.4rem solid transparent;
+		border-top-color: $dark;
+		content: "";
+	}
+
+	&.activated {
+
+		&:before {
+			margin: -0.2rem 0 0.2rem;
+			transform: rotate(180deg);
+		}
+	}
+}

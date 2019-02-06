@@ -1,0 +1,244 @@
+/* ## Site Footer
+--------------------------------------------- */
+
+.site-footer {
+	position: relative;
+	width: 100%;
+	border-top: $site-border;
+	color: $body;
+
+	.widget-area {
+
+		@include breakpoint(sm) {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: $darker;
+
+		&:hover,
+		&:focus {
+			color: $accent;
+		}
+	}
+
+	.button {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+
+		&.outline {
+			color: $accent;
+
+			&:hover,
+			&:focus {
+				color: $white;
+			}
+		}
+
+		&.white {
+			color: $dark;
+
+			&:hover,
+			&:focus {
+				color: $dark;
+			}
+
+			&.outline {
+				color: $white;
+
+				&:hover,
+				&:focus {
+					color: $dark;
+				}
+			}
+		}
+
+		&:disabled {
+			color: $gray;
+		}
+	}
+}
+
+/* ## Before Footer
+--------------------------------------------- */
+
+.before-footer {
+	padding: 5rem 0;
+	border-bottom: $site-border;
+	background-color: $light;
+
+	@include breakpoint(sm) {
+		padding: 7.5rem 0;
+	}
+
+	.blog &,
+	.archive &,
+	.search-results & {
+		background-color: $white;
+	}
+
+	.wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@include flexfix;
+	}
+
+	.widget {
+		margin-bottom: 0;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	h2, h3, h4, h5, h6 {
+		color: $dark;
+	}
+
+	p {
+
+		@include breakpoint(sm) {
+			margin: 0;
+		}
+	}
+}
+
+/* ## Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets {
+	position: relative;
+	padding: 5rem 0 0;
+	font-size: 1.5rem;
+
+	@include breakpoint(sm) {
+		padding: 10rem 0 0;
+	}
+
+	.wrap {
+
+		@include breakpoint(sm) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	.widget-title {
+		margin-bottom: 1em;
+		color: $dark;
+		font-size: 1.6rem;
+	}
+
+	.widget-area {
+		margin: 0 auto 4rem;
+
+		@include breakpoint(sm) {
+			width: $one-third;
+			margin-left: $margin;
+
+			&.footer-widgets-1 {
+				margin-left: 0;
+			}
+		}
+
+		&.footer-widgets-1 {
+
+			i {
+				display: inline-block;
+				float: left;
+				margin-top: 0.2em;
+				margin-right: 0.618em;
+			}
+		}
+
+		&.footer-widgets-2 {
+			display: flex;
+
+			@include breakpoint(sm) {
+				margin-bottom: 0;
+			}
+
+			.widget {
+				width: $one-half;
+			}
+		}
+
+		.widget {
+			display: block;
+			margin-bottom: 4rem;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&.widget_nav_menu {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* ## Footer Credits
+--------------------------------------------- */
+
+.footer-credits {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 4rem 0;
+	border-top: $site-border;
+	font-size: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	@include breakpoint(sm) {
+		margin-top: 10rem;
+	}
+
+	.wrap {
+
+		@include breakpoint(sm) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+	.widget {
+
+		&:last-of-type {
+
+			@include breakpoint(sm) {
+				text-align: right;
+			}
+		}
+	}
+
+	.simple-social-icons {
+		margin-bottom: 1em;
+		margin-left: -1em;
+
+		@include breakpoint(sm) {
+			margin-bottom: 0;
+		}
+	}
+
+	.menu-item {
+		width: auto;
+		margin-left: 2em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

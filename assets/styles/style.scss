@@ -1,0 +1,99 @@
+/*!
+ * Theme Name:  Rose
+ * Theme URI:   http://seothemes.com/themes/rose/
+ * Description: Rose child theme for the Genesis Framework.
+ * Author:      SEO Themes
+ * Author URI:  http://seothemes.com/
+ * Version:     1.0.1
+ * Text Domain: rose
+ * Tags:        one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-logo, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, threaded-comments, translation-ready
+ * Template:    genesis
+ * Template     Version: 2.6.1
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * GitHub URI:  https://github.com/seothemes/rose
+ */
+
+/* # Table of Contents
+
+- Reset
+	- Normalize 7.0
+- Defaults
+	- Box Sizing
+	- Float Clearing
+	- Typography
+	- Headings
+	- Forms
+	- Objects
+	- Tables
+	- Accessibility
+- Layout
+	- Site Containers
+	- Content Width
+	- Column Classes
+	- Gallery
+	- Pricing Tables
+- Common
+	- Avatars
+	- Genesis
+	- Search Form
+	- WordPress
+	- Gutenberg
+- Header
+	- Site Header
+	- Title Area
+	- Before Header
+	- Header Right
+	- Hero Section
+- Menus
+	- Menus
+	- Sub Menus
+	- Specific Menus
+	- Menu Toggle
+	- Sub Menu Toggle
+- Content
+	- Entries
+	- Entry Content
+	- Entry Titles
+	- Entry Meta
+	- Entry Footer
+	- Pagination
+	- Comments
+- Sidebars
+	- Sidebars
+	- Widgets
+- Footer
+	- Site Footer
+	- Before Footer
+	- Footer Widgets
+- Plugins
+	- Genesis eNews Extended
+	- Genesis Portfolio Pro
+	- Genesis Simple FAQ
+	- Genesis Simple Share
+	- Genesis Testimonial Slider
+	- Google Map
+	- Ninja Forms
+	- SEO Slider
+	- Simple Social Icons
+	- WP Featherlight
+	- WooCommerce Menu Cart
+- Home
+	- Front Page Widgets
+- Print
+	- Print Styles
+*/
+
+@import "utilities";
+@import "reset";
+@import "defaults";
+@import "layout";
+@import "common";
+@import "header";
+@import "menus";
+@import "content";
+@import "sidebars";
+@import "footer";
+@import "plugins";
+@import "home";
+@import "print";
