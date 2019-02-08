@@ -60,75 +60,10 @@
 	}
 }
 
-/* ## Genesis Portfolio Pro
+/* ## WP Google Maps
 --------------------------------------------- */
-
-.archive.genesis-pro-portfolio {
-
-	.content {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.entry {
-		width: 100%;
-		margin: 0 0 6vw;
-		padding: 0;
-		border: 0;
-
-		@include overlay;
-
-		@include breakpoint(xs) {
-			width: $one-half;
-			margin-bottom: 2.5rem;
-			margin-left: $margin;
-
-			&:nth-of-type(odd) {
-				margin-left: 0;
-			}
-		}
-
-		&:before {
-			opacity: 0;
-		}
-
-		&:hover,
-		&:focus {
-
-			&:before {
-				opacity: 1;
-			}
-
-			.entry-header {
-				top: 0;
-				bottom: 0;
-				margin: 0;
-				opacity: 1;
-			}
-		}
-	}
-
-	.entry-header {
-		display: flex;
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		margin-top: 100%;
-		opacity: 0;
-		pointer-events: none;
-		align-items: center;
-		justify-content: center;
-
-		@include transition;
-
-		a {
-			color: $white;
-		}
-	}
+div#wpgmza_map {
+	padding: 0 0 30px 30px;
 }
 
 /* ## Genesis Simple FAQs

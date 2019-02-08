@@ -64,7 +64,7 @@
 		order: initial;
 
 		.shrink & {
-			height: 7rem;
+			height: 20rem;
 		}
 
 		&:first-of-type > a {
@@ -105,7 +105,8 @@
 
 		a {
 
-			@include gradient;
+			//@include gradient;
+			background: $one;
 			padding: 1em 3em;
 			border-radius: 9rem;
 			color: $white;
@@ -135,7 +136,7 @@
 	a:hover,
 	a:focus,
 	&.current-menu-item > a {
-		color: $accent;
+		color: $three;
 	}
 
 	span {
@@ -154,7 +155,7 @@
 	@include breakpoint(md) {
 		position: absolute;
 		z-index: 99;
-		top: 100%;
+		top: 80%;
 		left: 0;
 		width: 20rem;
 		margin-left: -1em;
@@ -339,7 +340,7 @@
 			height: 6rem;
 
 			.sticky-header .shrink & {
-				height: 5rem;
+				height: 15rem;
 			}
 		}
 	}
@@ -388,7 +389,7 @@
 		}
 
 		a {
-			margin-bottom: 1em;
+			margin-bottom: .2em;
 			padding: 0;
 			color: $body;
 		}
@@ -397,7 +398,7 @@
 	.menu-item a:hover,
 	.menu-item a:focus,
 	.menu-item.current-menu-item > a {
-		color: $accent;
+		color: $one;
 	}
 }
 

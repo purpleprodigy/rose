@@ -1,18 +1,18 @@
 @charset 'UTF-8';
 /*!
  * Theme Name:  Rose
- * Theme URI:   http://seothemes.com/themes/rose/
- * Description: Rose child theme for the Genesis Framework.
- * Author:      SEO Themes
- * Author URI:  http://seothemes.com/
- * Version:     1.0.1
+ * Theme URI:   https://rosecox.com/
+ * Description: Rose is a child theme for the Genesis Framework.
+ * Author:      Purple Prodigy
+ * Author URI:  http://purpleporidgy.com/
+ * Version:     1.0.0
  * Text Domain: rose
  * Tags:        one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-logo, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, theme-options, threaded-comments, translation-ready
  * Template:    genesis
- * Template     Version: 2.6.1
+ * Template     Version: 2.8.1
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * GitHub URI:  https://github.com/seothemes/rose
+ * GitHub URI:  https://github.com/purpleprodigy/rose
  */
 /* # Table of Contents
 
@@ -387,7 +387,7 @@ body {
 	margin: 0;
 	color: #2a3139;
 	background-color: #ffffff;
-	font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
+	font-family: 'Montserrat', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -418,7 +418,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 ol,
@@ -455,7 +455,7 @@ i {
 blockquote {
 	margin: 0 0 1.382em;
 	padding: 0 1em;
-	border-left: 2px solid #009cff;
+	border-left: 2px solid #8980bc;
 }
 
 blockquote p:last-of-type {
@@ -531,7 +531,7 @@ textarea {
 	border-radius: 9rem;
 	color: #2a3139;
 	background-color: #fbfcfd;
-	font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
+	font-family: 'Montserrat', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -541,7 +541,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-	border-color: #009cff;
+	border-color: #8980bc;
 	outline: none;
 }
 
@@ -576,7 +576,7 @@ input[type='submit'],
 	border-radius: 9rem;
 	color: #ffffff;
 	box-shadow: 0 0.25rem 2rem -0.5rem rgba(255, 255, 255, 0);
-	font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
+	font-family: 'Montserrat', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 700;
@@ -585,8 +585,8 @@ input[type='submit'],
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	background: #0072ff;
-	background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+	background: #95cde8;
+	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 }
 
@@ -603,7 +603,7 @@ input[type='submit']:focus,
 .wp-block-button a:hover,
 .wp-block-button a:focus {
 	color: #ffffff;
-	box-shadow: 0 0.5rem 2rem -0.5rem rgba(0, 156, 255, 0.3);
+	box-shadow: 0 0.5rem 2rem -0.5rem rgba(137, 128, 188, 0.3);
 }
 
 .button.outline,
@@ -612,9 +612,9 @@ input[type='button'].outline,
 input[type='reset'].outline,
 input[type='submit'].outline,
 .wp-block-button a.outline {
-	color: #009cff;
+	color: #8980bc;
 	background: transparent;
-	box-shadow: inset 0 0 0 2px #009cff;
+	box-shadow: inset 0 0 0 2px #8980bc;
 }
 
 .button.outline:hover,
@@ -630,7 +630,7 @@ input[type='submit'].outline:focus,
 .wp-block-button a.outline:hover,
 .wp-block-button a.outline:focus {
 	color: #ffffff;
-	background-color: #009cff;
+	background-color: #8980bc;
 	box-shadow: none;
 }
 
@@ -886,11 +886,6 @@ th {
 	background-color: #f6f8fa;
 }
 
-.page-builder .site-inner {
-	border-top: 1px solid #eceef1;
-	border-bottom: 1px solid #eceef1;
-}
-
 .contact-page .site-inner {
 	padding-top: 60px;
 	padding-top: 6rem;
@@ -1030,7 +1025,7 @@ th {
 	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
-	border: 1px solid #eceef1;
+	border: 1px solid #8980bc;
 	border-radius: 3px;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
@@ -1076,9 +1071,9 @@ th {
 }
 
 .pricing-table .featured {
-	border: 1px solid #eceef1;
-	background-color: #ffffff;
-	box-shadow: 0 2rem 5rem -1rem rgba(42, 49, 57, 0.0618);
+	border: 1px solid #8980bc;
+	background-color: #f6f8fa;
+	box-shadow: 0 2rem 5rem -1rem rgba(137, 128, 188, 0.0618);
 	transform: scale(1.05);
 }
 
@@ -1096,7 +1091,7 @@ th {
 
 .pricing-table strong {
 	display: block;
-	color: #009cff;
+	color: #8980bc;
 	font-size: 2.8em;
 	font-weight: 700;
 }
@@ -1432,7 +1427,7 @@ img.alignright,
 }
 
 .wp-block-pullquote > p {
-	font-family: 'Nunito Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
+	font-family: 'Montserrat', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -1488,8 +1483,8 @@ img.alignright,
 	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	height: 60px;
-	height: 6rem;
+	height: 150px;
+	height: 15rem;
 	transition: height 0.3s ease;
 	-ms-flex-align: center;
 	align-items: center;
@@ -1552,6 +1547,8 @@ img.alignright,
 
 .custom-logo {
 	display: block;
+	max-width: 75%;
+	align: center;
 }
 
 .shrink .custom-logo {
@@ -1574,10 +1571,10 @@ img.alignright,
 	position: relative;
 	height: 40px;
 	height: 4rem;
-	border-top: 1px solid rgba(198, 202, 206, 0.3);
+	border-top: 1px solid rgba(137, 128, 188, 0.3);
 	border-bottom: 1px solid rgba(198, 202, 206, 0.3);
 	color: #3f454c;
-	background-color: #f6f8fa;
+	background-color: #8980bc;
 	font-size: 12px;
 	font-size: 1.2rem;
 	-ms-flex-wrap: wrap;
@@ -1691,8 +1688,8 @@ img.alignright,
 --------------------------------------------- */
 .hero-section {
 	position: relative;
-	padding: 120px 0 60px;
-	padding: 12rem 0 6rem;
+	padding: 320px 0 60px;
+	padding: 32rem 0 6rem;
 	border-bottom: 1px solid #eceef1;
 	background-color: #f6f8fa;
 	background-position: center;
@@ -1862,9 +1859,7 @@ img.alignright,
 }
 
 .menu-item.button a {
-	background: #0072ff;
-	background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
+	background: #8980bc;
 	padding: 1em 3em;
 	border-radius: 9rem;
 	color: #ffffff;
@@ -1892,7 +1887,7 @@ img.alignright,
 .menu-item a:hover,
 .menu-item a:focus,
 .menu-item.current-menu-item > a {
-	color: #009cff;
+	color: #8980bc;
 }
 
 .menu-item span {
@@ -2054,7 +2049,7 @@ img.alignright,
 }
 
 .site-footer .menu-item a {
-	margin-bottom: 1em;
+	margin-bottom: 0.2em;
 	padding: 0;
 	color: #4d5968;
 }
@@ -2062,7 +2057,7 @@ img.alignright,
 .site-footer .menu-item a:hover,
 .site-footer .menu-item a:focus,
 .site-footer .menu-item.current-menu-item > a {
-	color: #009cff;
+	color: #8980bc;
 }
 
 /* ## Menu Toggle
@@ -2250,14 +2245,14 @@ img.alignright,
 
 .entry-content p a:not(.button) {
 	color: #4d5968;
-	box-shadow: inset 0 -1.5px 0 #009cff;
+	box-shadow: inset 0 -1.5px 0 #8980bc;
 	text-decoration: none;
 	transition: all 0.3s ease;
 }
 
 .entry-content p a:not(.button):hover,
 .entry-content p a:not(.button):focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 .entry-content h2,
@@ -2412,7 +2407,7 @@ img.alignright,
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 /* ## Entry Meta
@@ -2542,12 +2537,12 @@ img.alignright,
 
 .archive-pagination a:hover,
 .archive-pagination a:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 .archive-pagination .active a {
-	background: #0072ff;
-	background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+	background: #95cde8;
+	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 	color: #ffffff;
 }
@@ -2702,7 +2697,7 @@ img.alignright,
 
 .sidebar a:hover,
 .sidebar a:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 /* ## Widgets
@@ -2750,7 +2745,7 @@ img.alignright,
 
 .site-footer a:hover,
 .site-footer a:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 .site-footer .button {
@@ -2763,7 +2758,7 @@ img.alignright,
 }
 
 .site-footer .button.outline {
-	color: #009cff;
+	color: #8980bc;
 }
 
 .site-footer .button.outline:hover,
@@ -2837,7 +2832,7 @@ img.alignright,
 .before-footer h4,
 .before-footer h5,
 .before-footer h6 {
-	color: #2a3139;
+	color: #ffffff;
 }
 
 /* ## Footer Widgets
@@ -2976,78 +2971,10 @@ img.alignright,
 	transition: all 0.3s ease;
 }
 
-/* ## Genesis Portfolio Pro
+/* ## WP Google Maps
 --------------------------------------------- */
-.archive.genesis-pro-portfolio .content {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
-.archive.genesis-pro-portfolio .entry {
-	width: 100%;
-	margin: 0 0 6vw;
-	padding: 0;
-	border: 0;
-}
-
-.archive.genesis-pro-portfolio .entry:before {
-	display: block !important;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(42, 49, 57, 0.5);
-	content: '';
-	pointer-events: none;
-	transition: all 0.3s ease;
-}
-
-.archive.genesis-pro-portfolio .entry:before {
-	opacity: 0;
-}
-
-.archive.genesis-pro-portfolio .entry:hover:before,
-.archive.genesis-pro-portfolio .entry:focus:before {
-	opacity: 1;
-}
-
-.archive.genesis-pro-portfolio .entry:hover .entry-header,
-.archive.genesis-pro-portfolio .entry:focus .entry-header {
-	top: 0;
-	bottom: 0;
-	margin: 0;
-	opacity: 1;
-}
-
-.archive.genesis-pro-portfolio .entry-header {
-	display: -ms-flexbox;
-	display: flex;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin-top: 100%;
-	opacity: 0;
-	pointer-events: none;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	transition: all 0.3s ease;
-}
-
-.archive.genesis-pro-portfolio .entry-header a {
-	color: #ffffff;
+div#wpgmza_map {
+	padding: 0 0 30px 30px;
 }
 
 /* ## Genesis Simple FAQs
@@ -3079,7 +3006,7 @@ div.gs-faq .gs-faq__question {
 
 div.gs-faq .gs-faq__question:hover,
 div.gs-faq .gs-faq__question:focus {
-	color: #009cff;
+	color: #8980bc;
 }
 
 div.gs-faq .gs-faq__question:after {
@@ -3312,7 +3239,7 @@ ul.testimonials-list h5 {
 	height: 1.2rem;
 	border-radius: 1.2rem;
 	color: #ffffff;
-	background-color: #009cff;
+	background-color: #8980bc;
 	box-shadow: 0 0 0 1px #ffffff;
 	font-size: 7px;
 	font-size: 0.7rem;
@@ -3340,7 +3267,7 @@ ul.testimonials-list h5 {
 	padding: 6rem 0;
 }
 
-.front-page-widget:nth-of-type(even) {
+.front-page-widget:nth-of-type(odd) {
 	border-top: 1px solid #eceef1;
 	border-bottom: 1px solid #eceef1;
 	background-color: #f6f8fa;
@@ -3386,8 +3313,8 @@ ul.testimonials-list h5 {
 
 .has-hero-slider .front-page-1 .slick-wrap {
 	max-width: 88vw;
-	padding-top: 40px;
-	padding-top: 4rem;
+	padding-top: 20px;
+	padding-top: 2rem;
 }
 
 .has-hero-slider .front-page-1 .slick-content {
@@ -3672,15 +3599,17 @@ ul.testimonials-list h5 {
 
 /* ## Front Page 6
 --------------------------------------------- */
-.front-page-6 {
-	background: #0072ff;
-	background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+.front-page-6,
+.before-footer {
+	background: #95cde8;
+	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 	border: none !important;
 	color: #ffffff;
 }
 
-.front-page-6 .wrap {
+.front-page-6 .wrap,
+.before-footer .wrap {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -3692,20 +3621,25 @@ ul.testimonials-list h5 {
 }
 
 .front-page-6 .wrap:before,
-.front-page-6 .wrap:after {
+.front-page-6 .wrap:after,
+.before-footer .wrap:before,
+.before-footer .wrap:after {
 	display: none;
 }
 
-.front-page-6 .widget:last-of-type .button {
+.front-page-6 .widget:last-of-type .button,
+.before-footer .widget:last-of-type .button {
 	margin-bottom: 0;
 }
 
-.front-page-6 p {
+.front-page-6 p,
+.before-footer p {
 	max-width: 768px;
 	color: #ffffff;
 }
 
-.front-page-6 .alignright {
+.front-page-6 .alignright,
+.before-footer .alignright {
 	margin-left: 0;
 }
 
@@ -4005,13 +3939,8 @@ ul.testimonials-list h5 {
 	.search-results .content .entry:nth-of-type(odd) {
 		margin-left: 0;
 	}
-	.archive.genesis-pro-portfolio .entry {
-		width: 48.71795%;
-		margin-bottom: 2.5rem;
-		margin-left: 2.5641%;
-	}
-	.archive.genesis-pro-portfolio .entry:nth-of-type(odd) {
-		margin-left: 0;
+	.has-hero-slider .front-page-1 {
+		padding: 5rem 0 0;
 	}
 	.has-hero-slider .front-page-1 .slick-arrow {
 		visibility: visible;
@@ -4034,7 +3963,7 @@ ul.testimonials-list h5 {
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.wp-video-shortcode {
 		width: auto;
@@ -4302,7 +4231,7 @@ ul.testimonials-list h5 {
 		margin-left: 0;
 	}
 	.hero-section {
-		padding: 16rem 0 16rem;
+		padding: 26rem 0 16rem;
 	}
 	.blog .hero-section,
 	.archive .hero-section,
@@ -4392,7 +4321,7 @@ ul.testimonials-list h5 {
 		padding: 10rem 0;
 	}
 	.has-hero-slider .front-page-1 {
-		padding: 0;
+		padding: 10rem 0 0;
 	}
 	.has-hero-slider .front-page-1 .slick-slider {
 		max-height: 100vh;
@@ -4401,7 +4330,7 @@ ul.testimonials-list h5 {
 		top: 50%;
 	}
 	.has-hero-slider .front-page-1 h2 {
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.front-page-1.hero-section {
 		padding: 16rem 0;
@@ -4459,13 +4388,16 @@ ul.testimonials-list h5 {
 	.front-page-5 .listing-item {
 		width: 33.33333333333333vw;
 	}
-	.front-page-6 {
+	.front-page-6,
+	.before-footer {
 		padding: 10rem 0;
 	}
-	.front-page-6 .widget {
+	.front-page-6 .widget,
+	.before-footer .widget {
 		margin-bottom: 0;
 	}
-	.front-page-6 p {
+	.front-page-6 p,
+	.before-footer p {
 		margin-bottom: 0;
 	}
 	.front-page-7 .pricing-table {
@@ -4566,10 +4498,10 @@ ul.testimonials-list h5 {
 		margin: auto 1em auto 0;
 	}
 	.sticky-header .site-header.shrink > .wrap {
-		height: 7rem;
+		height: 17rem;
 	}
 	.site-header > .wrap {
-		height: 10rem;
+		height: 20rem;
 		padding: 0;
 		-ms-flex-wrap: nowrap;
 		    flex-wrap: nowrap;
@@ -4580,6 +4512,9 @@ ul.testimonials-list h5 {
 	.site-description {
 		line-height: 1.382;
 		text-align: left;
+	}
+	.custom-logo {
+		max-width: 100%;
 	}
 	.before-header {
 		width: 100vw;
@@ -4600,13 +4535,13 @@ ul.testimonials-list h5 {
 		order: 5;
 	}
 	.hero-section {
-		padding: 20rem 0 16rem;
+		padding: 28rem 0 16rem;
 	}
 	.has-before-header .hero-section {
-		padding-top: 24rem;
+		padding-top: 54rem;
 	}
 	.has-nav-secondary .hero-section {
-		padding-top: 26rem;
+		padding-top: 44rem;
 	}
 	.has-before-header.has-nav-secondary .hero-section {
 		padding-top: 30rem;
@@ -4638,7 +4573,7 @@ ul.testimonials-list h5 {
 		order: initial;
 	}
 	.shrink .menu-item {
-		height: 7rem;
+		height: 20rem;
 	}
 	.menu-item:first-of-type > a {
 		padding-left: 0;
@@ -4652,7 +4587,7 @@ ul.testimonials-list h5 {
 	.sub-menu {
 		position: absolute;
 		z-index: 99;
-		top: 100%;
+		top: 80%;
 		left: 0;
 		width: 20rem;
 		margin-left: -1em;
@@ -4725,7 +4660,7 @@ ul.testimonials-list h5 {
 		height: 6rem;
 	}
 	.sticky-header .shrink .nav-secondary .menu-item {
-		height: 5rem;
+		height: 15rem;
 	}
 	.nav-secondary .menu > .menu-item:first-of-type {
 		padding-left: 0;
@@ -4761,10 +4696,12 @@ ul.testimonials-list h5 {
 	.wpmenucart-contents {
 		margin-left: 1em;
 	}
+	.has-hero-slider .front-page-1 {
+		padding: 20rem 0 0;
+	}
 	.has-hero-slider .front-page-1 .slick-wrap {
 		width: 88%;
 		max-width: 1152px;
-		padding-top: 10rem;
 	}
 	.has-before-header .has-hero-slider .front-page-1 .slick-wrap {
 		padding-top: 14rem;
@@ -4799,13 +4736,10 @@ ul.testimonials-list h5 {
 
 @media (min-width: 1280px) {
 	.hero-section {
-		padding: 24rem 0 20rem;
-	}
-	.has-before-header .hero-section {
-		padding-top: 28rem;
+		padding: 30rem 0 20rem;
 	}
 	.has-nav-secondary .hero-section {
-		padding-top: 30rem;
+		padding-top: 34rem;
 	}
 	.has-before-header.has-nav-secondary .hero-section {
 		padding-top: 34rem;

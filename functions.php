@@ -262,6 +262,3 @@ require_once CHILD_THEME_DIR . '/includes/customize.php';
 
 // Load default settings.
 require_once CHILD_THEME_DIR . '/includes/defaults.php';
-
-// Load recommended plugins.
-require_once CHILD_THEME_DIR . '/includes/plugins.php';

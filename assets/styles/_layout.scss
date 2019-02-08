@@ -453,7 +453,7 @@
 .pricing-table {
 	display: flex;
 	margin: 0 auto;
-	border: $site-border;
+	border: 1px solid $one;
 	border-radius: $site-radius;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -498,9 +498,9 @@
 	}
 
 	.featured {
-		border: $site-border;
-		background-color: $white;
-		box-shadow: 0 2rem 5rem -1rem rgba($dark, 0.0618);
+		border: 1px solid $one;
+		background-color: $light;
+		box-shadow: 0 2rem 5rem -1rem rgba($one, 0.0618);
 		transform: scale(1.05);
 	}
 

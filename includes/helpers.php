@@ -70,6 +70,19 @@ function rose_overlay_color() {
 }
 
 /**
+ * Returns the default one color. Hack for buttons!
+ *
+ * @since  1.0.0
+ *
+ * @return string Hex value.
+ */
+function rose_one_color() {
+
+	return '#8980bc';
+
+}
+
+/**
  * Custom header image callback.
  *
  * Loads custom header or featured image depending on what is set on a per

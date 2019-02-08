@@ -20,7 +20,7 @@
 			> .wrap {
 
 				@include breakpoint(md) {
-					height: 7rem;
+					height: 17rem;
 				}
 			}
 		}
@@ -42,14 +42,14 @@
 	> .wrap {
 		display: flex;
 		position: relative;
-		height: 6rem;
+		height: 15rem;
 		transition: height 0.3s ease;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 
 		@include breakpoint(md) {
-			height: 10rem;
+			height: 20rem;
 			padding: 0;
 			flex-wrap: nowrap;
 		}
@@ -109,6 +109,12 @@
 
 .custom-logo {
 	display: block;
+	max-width: 75%;
+	align: center;
+
+	@include breakpoint(md) {
+		max-width: 100%;
+	}
 
 	.shrink & {
 		display: block;
@@ -130,10 +136,10 @@
 	display: flex;
 	position: relative;
 	height: 4rem;
-	border-top: 1px solid rgba($gray, 0.3);
+	border-top: 1px solid rgba($one, 0.3);
 	border-bottom: 1px solid rgba($gray, 0.3);
 	color: $darker;
-	background-color: $light;
+	background-color: $one;
 	font-size: 1.2rem;
 	flex-wrap: wrap;
 	align-items: center;
@@ -264,7 +270,7 @@
 
 .hero-section {
 	position: relative;
-	padding: 12rem 0 6rem;
+	padding: 32rem 0 6rem;
 	border-bottom: $site-border;
 	background-color: $light;
 	background-position: center;
@@ -274,36 +280,32 @@
 	@include overlay;
 
 	@include breakpoint(sm) {
-		padding: 16rem 0 16rem;
+		padding: 26rem 0 16rem;
 	}
 
 	@include breakpoint(md) {
-		padding: 20rem 0 16rem;
+		padding: 28rem 0 16rem;
 	}
 
 	@include breakpoint(xl) {
-		padding: 24rem 0 20rem;
+		padding: 30rem 0 20rem;
 	}
 
 	.has-before-header & {
 
 		@include breakpoint(md) {
-			padding-top: 24rem;
-		}
-
-		@include breakpoint(xl) {
-			padding-top: 28rem;
+			padding-top: 54rem;
 		}
 	}
 
 	.has-nav-secondary & {
 
 		@include breakpoint(md) {
-			padding-top: 26rem;
+			padding-top: 44rem;
 		}
 
 		@include breakpoint(xl) {
-			padding-top: 30rem;
+			padding-top: 34rem;
 		}
 	}
 

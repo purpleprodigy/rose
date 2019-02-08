@@ -197,163 +197,106 @@ function rose_customizer_output() {
 		.hero-section:before,
 		.front-page-5 .image:before,
 		.front-page-9:before,
-		.archive.genesis-pro-portfolio .entry:before {
+		.entry:before {
 			background: {$overlay};
 		}
 
 	" : '';
-
-	// Gradient color CSS.
-	$css .= ( rose_gradient_one_color() !== $gradient_one || rose_gradient_two_color() !== $gradient_two ) ? "
-
-		.button,
-		button,
-		input[type='button'],
-		input[type='reset'],
-		input[type='submit'],
-		.front-page-6,
-		.archive-pagination .active a,
-		.wp-block-button a {
-			background: {$gradient_one};
-			background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
-			background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-			background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
-		}
-
-		.button:hover,
-		.button:focus,
-		button:hover,
-		button:focus,
-		input[type='button']:hover,
-		input[type='button']:focus,
-		input[type='reset']:hover,
-		input[type='reset']:focus,
-		input[type='submit']:hover,
-		input[type='submit']:focus,
-		.wp-block-button a:hover,
-		.wp-block-button a:focus {
-			box-shadow: 0 0.5rem 2rem -0.5rem rgba({$shadow});
-		}
-
-		.button.outline,
-		button.outline,
-		input[type='button'].outline,
-		input[type='reset'].outline,
-		input[type='submit'].outline {
-			color: {$mix};
-			background: transparent;
-			box-shadow: inset 0 0 0 2px {$mix};
-		}
-
-		.button.outline:hover,
-		.button.outline:focus,
-		button.outline:hover,
-		button.outline:focus,
-		input[type='button'].outline:hover,
-		input[type='button'].outline:focus,
-		input[type='reset'].outline:hover,
-		input[type='reset'].outline:focus,
-		input[type='submit'].outline:hover,
-		input[type='submit'].outline:focus {
-			background-color: {$mix};
-			background: {$gradient_one};
-			background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
-			background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-			background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
-		}
-
-		a,
-		.sidebar a:hover,
-		.sidebar a:focus,
-		.site-footer a:hover,
-		.site-footer a:focus,
-		.entry-title a:hover,
-		.entry-title a:focus,
-		.menu-item a:hover,
-		.menu-item a:focus,
-		.menu-item.current-menu-item > a,
-		.site-footer .menu-item a:hover,
-		.site-footer .menu-item a:focus,
-		.site-footer .menu-item.current-menu-item > a,
-		.entry-content p a:not(.button):hover,
-		.entry-content p a:not(.button):focus,
-		.pricing-table strong,
-		div.gs-faq .gs-faq__question:hover,
-		div.gs-faq .gs-faq__question:focus {
-			color: {$mix};
-		}
-
-		input:focus,
-		select:focus,
-		textarea:focus {
-			border-color: {$mix};
-		}
-
-		.entry-content p a:not(.button) {
-			box-shadow: inset 0 -1.5px 0 {$mix};
-		}
-
-		" : '';
-
-	// WooCommerce only styles.
-	if ( rose_is_woocommerce_page() ) {
-
-		$css .= ( rose_gradient_one_color() !== $gradient_one || rose_gradient_two_color() !== $gradient_two ) ? "
-
-			.woocommerce #respond input#submit,
-			.woocommerce a.button,
-			.woocommerce a.button.alt,
-			.woocommerce button.button,
-			.woocommerce button.button.alt,
-			.woocommerce input.button,
-			.woocommerce input.button.alt,
-			.woocommerce input.button[type=submit],
-			.woocommerce input.button[type=submit].alt {
-				background: {$gradient_one};
-				background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
-				background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-				background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
-			}
-
-			.woocommerce #respond input#submit:focus,
-			.woocommerce #respond input#submit:hover,
-			.woocommerce a.button.alt:focus,
-			.woocommerce a.button.alt:hover,
-			.woocommerce a.button:focus,
-			.woocommerce a.button:hover,
-			.woocommerce button.button.alt:focus,
-			.woocommerce button.button.alt:hover,
-			.woocommerce button.button:focus,
-			.woocommerce button.button:hover,
-			.woocommerce input.button.alt:focus,
-			.woocommerce input.button.alt:hover,
-			.woocommerce input.button:focus,
-			.woocommerce input.button:hover,
-			.woocommerce input.button[type=submit].alt:focus,
-			.woocommerce input.button[type=submit].alt:hover,
-			.woocommerce input.button[type=submit]:focus,
-			.woocommerce input.button[type=submit]:hover {
-				background: {$gradient_one};
-				background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
-				background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-				background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
-				box-shadow: 0 0.5rem 2rem -0.5rem rgba({$shadow});
-			}
-
-			.woocommerce div.product p.price,
-			.woocommerce div.product span.price,
-			div.gs-faq .gs-faq__question:hover,
-			div.gs-faq .gs-faq__question:focus {
-				color: {$mix};
-			}
-
-		" : '';
-
-	}
+//
+//	// Gradient color CSS.
+//	$css .= ( rose_gradient_one_color() !== $gradient_one || rose_gradient_two_color() !== $gradient_two ) ? "
+//
+//		.button,
+//		button,
+//		input[type='button'],
+//		input[type='reset'],
+//		input[type='submit'],
+//		.front-page-6,
+//		.before-footer,
+//		.archive-pagination .active a,
+//		.wp-block-button a {
+//			background: {$gradient_one};
+//			background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
+//			background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
+//			background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
+//			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
+//		}
+//
+//		.button:hover,
+//		.button:focus,
+//		button:hover,
+//		button:focus,
+//		input[type='button']:hover,
+//		input[type='button']:focus,
+//		input[type='reset']:hover,
+//		input[type='reset']:focus,
+//		input[type='submit']:hover,
+//		input[type='submit']:focus,
+//		.wp-block-button a:hover,
+//		.wp-block-button a:focus {
+//			box-shadow: 0 0.5rem 2rem -0.5rem rgba({$shadow});
+//		}
+//
+//		.button.outline,
+//		button.outline,
+//		input[type='button'].outline,
+//		input[type='reset'].outline,
+//		input[type='submit'].outline {
+//			color: {$mix};
+//			background: transparent;
+//			box-shadow: inset 0 0 0 2px {$mix};
+//		}
+//
+//		.button.outline:hover,
+//		.button.outline:focus,
+//		button.outline:hover,
+//		button.outline:focus,
+//		input[type='button'].outline:hover,
+//		input[type='button'].outline:focus,
+//		input[type='reset'].outline:hover,
+//		input[type='reset'].outline:focus,
+//		input[type='submit'].outline:hover,
+//		input[type='submit'].outline:focus {
+//			background-color: {$mix};
+//			background: {$gradient_one};
+//			background: -moz-linear-gradient(-45deg,  {$gradient_one} 0%, {$gradient_two} 100%);
+//			background: -webkit-linear-gradient(-45deg,  {$gradient_one} 0%,{$gradient_two} 100%);
+//			background: linear-gradient(135deg,  {$gradient_one} 0%,{$gradient_two} 100%);
+//			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='{$gradient_one}', endColorstr='{$gradient_two}',GradientType=1 );
+//		}
+//
+//		a,
+//		.sidebar a:hover,
+//		.sidebar a:focus,
+//		.site-footer a:hover,
+//		.site-footer a:focus,
+//		.entry-title a:hover,
+//		.entry-title a:focus,
+//		.menu-item a:hover,
+//		.menu-item a:focus,
+//		.menu-item.current-menu-item > a,
+//		.site-footer .menu-item a:hover,
+//		.site-footer .menu-item a:focus,
+//		.site-footer .menu-item.current-menu-item > a,
+//		.entry-content p a:not(.button):hover,
+//		.entry-content p a:not(.button):focus,
+//		.pricing-table strong,
+//		div.gs-faq .gs-faq__question:hover,
+//		div.gs-faq .gs-faq__question:focus {
+//			color: {$mix};
+//		}
+//
+//		input:focus,
+//		select:focus,
+//		textarea:focus {
+//			border-color: {$mix};
+//		}
+//
+//		.entry-content p a:not(.button) {
+//			box-shadow: inset 0 -1.5px 0 {$mix};
+//		}
+//
+//		" : '';
 
 	// Style handle is the name of the theme.
 	$handle = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
