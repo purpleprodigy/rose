@@ -531,6 +531,10 @@
 	.alignright {
 		margin-left: 0;
 	}
+
+	h2 {
+		text-align: center;
+	}
 }
 
 /* ## Front Page 7
@@ -579,6 +583,7 @@
 		blockquote {
 			padding-right: calc(2em + 6vw);
 			padding-left: calc(2em + 6vw);
+			font-size: 1em;
 
 			@include breakpoint(sm) {
 				padding-right: 2em;

@@ -3317,10 +3317,11 @@ ul.testimonials-list h5 {
 	justify-content: center;
 }
 
-/* ## WP Featherlight
+/* ## Genesis Featured Posts
 --------------------------------------------- */
-.featherlight .featherlight-close-icon {
-	box-shadow: none;
+.featuredpost h4.entry-title a {
+	font-size: 15px;
+	font-weight: normal;
 }
 
 /* ## Front Page
@@ -3712,6 +3713,11 @@ ul.testimonials-list h5 {
 	margin-left: 0;
 }
 
+.front-page-6 h2,
+.before-footer h2 {
+	text-align: center;
+}
+
 /* ## Front Page 7
 --------------------------------------------- */
 .front-page-7 {
@@ -3753,6 +3759,7 @@ ul.testimonials-list h5 {
 .front-page-7 ul blockquote {
 	padding-right: calc(2em + 6vw);
 	padding-left: calc(2em + 6vw);
+	font-size: 1em;
 }
 
 /* ## Front Page 8
