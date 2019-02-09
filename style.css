@@ -2971,6 +2971,71 @@ img.alignright,
 	transition: all 0.3s ease;
 }
 
+/* ## Display Posts Listing
+--------------------------------------------- */
+.page-id-334 .display-posts-listing {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.page-id-334 .listing-item {
+	overflow: hidden;
+	position: relative;
+	width: 30%;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	float: left;
+}
+
+.page-id-334 .image {
+	display: block;
+}
+
+.page-id-334 .image:before {
+	display: block !important;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(42, 49, 57, 0.5);
+	content: '';
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.page-id-334 .image:before {
+	opacity: 0;
+}
+
+.page-id-334 .image:hover:before,
+.page-id-334 .image:focus:before {
+	opacity: 1;
+}
+
+.page-id-334 .image:hover + .title,
+.page-id-334 .image:focus + .title {
+	top: 50%;
+	opacity: 1;
+}
+
+.page-id-334 .title {
+	font-size: 1em;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.page-id-334 .excerpt {
+	font-size: 12px;
+	font-weight: 400;
+}
+
 /* ## WP Google Maps
 --------------------------------------------- */
 div#wpgmza_map {
@@ -3365,7 +3430,7 @@ ul.testimonials-list h5 {
 }
 
 .front-page-2 .gallery img {
-	width: 100%;
+	width: 110%;
 	height: auto;
 	min-height: 10px;
 	min-height: 1rem;
@@ -3411,6 +3476,10 @@ ul.testimonials-list h5 {
 .front-page-3 .wrap:before,
 .front-page-3 .wrap:after {
 	display: none;
+}
+
+.front-page-3 .widget .button {
+	margin-bottom: 20px;
 }
 
 .front-page-3 .widget hr {

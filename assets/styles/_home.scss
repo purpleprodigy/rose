@@ -206,7 +206,7 @@
 	.gallery {
 
 		img {
-			width: 100%;
+			width: 110%;
 			height: auto;
 			min-height: 1rem;
 			margin: 2px;
@@ -270,7 +270,9 @@
 	}
 
 	.widget {
-
+		.button {
+			margin-bottom: 20px;
+		}
 		hr {
 			margin: 5rem 0;
 

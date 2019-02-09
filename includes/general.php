@@ -451,9 +451,9 @@ add_filter( 'genesis_post_info', 'rose_post_info_date' );
  */
 function rose_post_info_date( $post_info ) {
 
-	if ( is_archive() || is_home() || is_search() || is_post_type_archive() ) {
+	if ( is_archive('3') || is_home() || is_search() || is_post_type_archive() ) {
 
-		$post_info = '[post_date]';
+		$post_info = '';
 
 	}
 
@@ -584,3 +584,20 @@ function rose_search_and_404_page_layouts() {
 	}
 
 }
+
+add_action( 'wp_enqueue_scripts', 'remove_comments_in_services_category' );
+/**
+ * Removes comments from services category.
+ *
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function remove_comments_in_services_category() {
+	if (in_category('3') )  {
+		remove_action( 'genesis_after_entry', 'genesis_get_comments_template' );
+	}
+}
+
+//* Remove the entry meta in the entry header (requires HTML5 theme support)
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
