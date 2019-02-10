@@ -138,6 +138,30 @@ div#wpgmza_map {
 	padding: 0 0 30px 30px;
 }
 
+
+.agm-canvas {
+
+	.contact-page & {
+
+		@media (max-width: map-get($breakpoints, sm)) {
+			height: 30rem !important;
+		}
+
+		&:before {
+			//content: "";
+			display: block;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($dark, 0.618);
+		}
+	}
+}
+
+
 /* ## Genesis Simple FAQs
 --------------------------------------------- */
 
@@ -273,31 +297,6 @@ ul.testimonials-list {
 	font-size: small;
 }
 
-/* ## Google Map
---------------------------------------------- */
-
-.agm-canvas {
-
-	.contact-page & {
-
-		@media (max-width: map-get($breakpoints, sm)) {
-			height: 30rem !important;
-		}
-
-		&:before {
-			//content: "";
-			display: block;
-			position: absolute;
-			z-index: 1;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($dark, 0.618);
-		}
-	}
-}
-
 /* ## Ninja Forms
 --------------------------------------------- */
 
@@ -394,44 +393,6 @@ ul.testimonials-list {
 		&.alignright {
 			justify-content: flex-end;
 		}
-	}
-}
-
-/* ## WooCommerce Menu Cart
---------------------------------------------- */
-
-.wpmenucartli {
-	margin-top: 1em;
-}
-
-.wpmenucart-contents {
-	position: relative;
-	margin-top: 1em;
-	color: $dark;
-	font-size: 1.8rem;
-	text-decoration: none;
-
-	@include breakpoint(md) {
-		margin-left: 1em;
-	}
-
-	.cartcontents {
-		display: flex;
-		position: absolute;
-		top: -0.4rem;
-		right: -0.4rem;
-		width: 1.2rem;
-		height: 1.2rem;
-		border-radius: 1.2rem;
-		color: $white;
-		background-color: $accent;
-		box-shadow: 0 0 0 1px $white;
-		font-size: 0.7rem;
-		font-weight: $bold;
-		line-height: 1;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
 	}
 }
 
