@@ -2869,10 +2869,6 @@ img.alignright,
 	display: flex;
 }
 
-.footer-widgets .widget-area.footer-widgets-2 .widget {
-	width: 48.71795%;
-}
-
 .footer-widgets .widget-area .widget {
 	display: block;
 	margin-bottom: 40px;
@@ -3042,6 +3038,17 @@ div#wpgmza_map {
 	padding: 0 0 30px 30px;
 }
 
+.contact-page .agm-canvas:before {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(42, 49, 57, 0.618);
+}
+
 /* ## Genesis Simple FAQs
 --------------------------------------------- */
 div.gs-faq {
@@ -3172,20 +3179,6 @@ ul.testimonials-list h5 {
 	font-size: small;
 }
 
-/* ## Google Map
---------------------------------------------- */
-
-.contact-page .agm-canvas:before {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(42, 49, 57, 0.618);
-}
-
 /* ## Ninja Forms
 --------------------------------------------- */
 .nf-field .nf-field-element input,
@@ -3273,48 +3266,6 @@ ul.testimonials-list h5 {
 .simple-social-icons ul.alignright {
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-}
-
-/* ## WooCommerce Menu Cart
---------------------------------------------- */
-.wpmenucartli {
-	margin-top: 1em;
-}
-
-.wpmenucart-contents {
-	position: relative;
-	margin-top: 1em;
-	color: #2a3139;
-	font-size: 18px;
-	font-size: 1.8rem;
-	text-decoration: none;
-}
-
-.wpmenucart-contents .cartcontents {
-	display: -ms-flexbox;
-	display: flex;
-	position: absolute;
-	top: -4px;
-	top: -0.4rem;
-	right: -4px;
-	right: -0.4rem;
-	width: 12px;
-	width: 1.2rem;
-	height: 12px;
-	height: 1.2rem;
-	border-radius: 1.2rem;
-	color: #ffffff;
-	background-color: #8980bc;
-	box-shadow: 0 0 0 1px #ffffff;
-	font-size: 7px;
-	font-size: 0.7rem;
-	font-weight: 700;
-	line-height: 1;
-	text-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 }
 
 /* ## Genesis Featured Posts
@@ -4768,9 +4719,6 @@ ul.testimonials-list h5 {
 	}
 	.pagination {
 		padding: 5rem 0;
-	}
-	.wpmenucart-contents {
-		margin-left: 1em;
 	}
 	.has-hero-slider .front-page-1 {
 		padding: 20rem 0 0;
