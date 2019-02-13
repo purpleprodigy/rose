@@ -228,7 +228,7 @@ function rose_scripts_styles() {
 	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-menus', CHILD_THEME_URI . '/assets/scripts/min/menus.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	// Enqueue YouTube script.
-	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-youtube', CHILD_THEME_URI . '/assets/scripts/min/youtube.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-youtube', CHILD_THEME_URI . '/assets/scripts/youtube.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	// Disable superfish args.
 	wp_deregister_script( 'superfish-args' );
