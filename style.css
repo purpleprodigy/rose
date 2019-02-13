@@ -4257,6 +4257,9 @@ ul.testimonials-list h5 {
 	.wp-block-gallery.columns-9 .blocks-gallery-image:nth-of-type(9n + 1) {
 		margin-left: 0;
 	}
+	.custom-logo {
+		max-width: 100%;
+	}
 	.hero-section {
 		padding: 26rem 0 16rem;
 	}
@@ -4542,9 +4545,6 @@ ul.testimonials-list h5 {
 	.site-description {
 		line-height: 1.382;
 		text-align: left;
-	}
-	.custom-logo {
-		max-width: 100%;
 	}
 	.before-header {
 		width: 100vw;

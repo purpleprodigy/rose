@@ -111,7 +111,7 @@
 	display: block;
 	max-width: 65%;
 
-	@include breakpoint(md) {
+	@include breakpoint(sm) {
 		max-width: 100%;
 	}
 
