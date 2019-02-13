@@ -1483,8 +1483,8 @@ img.alignright,
 	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	height: 150px;
-	height: 15rem;
+	height: 120px;
+	height: 12rem;
 	transition: height 0.3s ease;
 	-ms-flex-align: center;
 	align-items: center;
@@ -1547,7 +1547,7 @@ img.alignright,
 
 .custom-logo {
 	display: block;
-	max-width: 75%;
+	max-width: 65%;
 	align: center;
 }
 
@@ -4360,6 +4360,9 @@ ul.testimonials-list h5 {
 	.has-hero-slider .front-page-1 h2 {
 		font-size: 2em;
 	}
+	.has-hero-slider .front-page-1 h2 {
+		font-size: 2em;
+	}
 	.front-page-1.hero-section {
 		padding: 16rem 0;
 	}
@@ -4736,6 +4739,13 @@ ul.testimonials-list h5 {
 	}
 	.has-nav-secondary.has-before-header .has-hero-slider .front-page-1 .slick-wrap {
 		padding-top: 20rem;
+	}
+	.has-hero-slider .front-page-1 h2 {
+		font-size: 2.2em;
+		line-height: 1.6;
+	}
+	.has-hero-slider .front-page-1 p {
+		line-height: 1.618;
 	}
 }
 

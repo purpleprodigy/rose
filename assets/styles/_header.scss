@@ -42,7 +42,7 @@
 	> .wrap {
 		display: flex;
 		position: relative;
-		height: 15rem;
+		height: 12rem;
 		transition: height 0.3s ease;
 		align-items: center;
 		justify-content: space-between;
@@ -109,7 +109,7 @@
 
 .custom-logo {
 	display: block;
-	max-width: 75%;
+	max-width: 65%;
 	align: center;
 
 	@include breakpoint(md) {

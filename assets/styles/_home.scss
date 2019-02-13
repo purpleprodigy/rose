@@ -127,6 +127,14 @@
 			@include breakpoint(sm) {
 				font-size: 2em;
 			}
+			@include breakpoint(md) {
+				font-size: 2.2em;
+				line-height: 1.6;
+			}
+
+			@include breakpoint(sm) {
+				font-size: 2em;
+			}
 		}
 
 		p {
@@ -135,6 +143,10 @@
 
 			@include breakpoint(xxs) {
 				line-height: 1.6;
+			}
+
+			@include breakpoint(md) {
+				line-height: 1.618;
 			}
 		}
 	}
