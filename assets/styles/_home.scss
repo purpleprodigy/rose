@@ -119,8 +119,9 @@
 			font-size: 2em;
 
 			@include breakpoint(xxs) {
-				font-size: 2.2em;
+				font-size: 1.2em;
 				line-height: 1.236;
+				padding-top: 80px
 			}
 
 			@include breakpoint(sm) {
@@ -133,7 +134,7 @@
 			line-height: 1.382;
 
 			@include breakpoint(xxs) {
-				line-height: 1.618;
+				line-height: 1.6;
 			}
 		}
 	}
