@@ -428,9 +428,6 @@ function rose_reposition_post_meta() {
 		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 		add_action( 'genesis_entry_header', 'genesis_post_info', 1 );
 
-		// Remove read more link on archives.
-		add_filter( 'get_the_content_more_link', '__return_empty_string' );
-
 	}
 
 }

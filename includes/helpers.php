@@ -248,40 +248,6 @@ function rose_minify_css( $css ) {
 }
 
 /**
- * Helper function to check if we're on a WooCommerce page.
- *
- * This function is used to check whether or not to output the
- * WooCommerce CSS in the rose_scripts_styles function.
- * Since it's a relatively large file, we don't want it to
- * load on unnecessary pages where it's not required.
- *
- * @since  1.0.0
- *
- * @link   https://docs.woocommerce.com/document/conditional-tags/.
- *
- * @return bool
- */
-function rose_is_woocommerce_page() {
-
-	if ( ! class_exists( 'WooCommerce' ) ) {
-
-		return false;
-
-	}
-
-	if ( is_woocommerce() || is_shop() || is_product_category() || is_product_tag() || is_product() || is_cart() || is_checkout() || is_account_page() ) {
-
-		return true;
-
-	} else {
-
-		return false;
-
-	}
-
-}
-
-/**
  * Convert hex to rgba value.
  *
  * This function takes a hex code (e.g. #eeeeee) and returns array of RGBA values.
