@@ -110,7 +110,6 @@
 .custom-logo {
 	display: block;
 	max-width: 65%;
-	align: center;
 
 	@include breakpoint(md) {
 		max-width: 100%;
