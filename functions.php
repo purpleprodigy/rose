@@ -210,7 +210,7 @@ function rose_scripts_styles() {
 	wp_dequeue_style( 'simple-social-icons-font' );
 
 	// Enqueue custom Google fonts.
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat+Sans:400,600,700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,600,700', array(), CHILD_THEME_VERSION );
 
 	// Conditionally load slider scripts.
 	if ( ! class_exists( 'SEO_Slider_Widget' ) ) {
