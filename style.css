@@ -586,7 +586,7 @@ input[type='submit'],
 	cursor: pointer;
 	transition: all 0.3s ease;
 	background: #95cde8;
-	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
+	background: linear-gradient(135deg, #746d9c 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 }
 
@@ -1024,7 +1024,7 @@ th {
 	display: -ms-flexbox;
 	display: flex;
 	margin: 0 auto;
-	border: 1px solid #8980bc;
+	border: 1px solid #746d9c;
 	border-radius: 3px;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
@@ -1070,9 +1070,9 @@ th {
 }
 
 .pricing-table .featured {
-	border: 1px solid #8980bc;
+	border: 1px solid #746d9c;
 	background-color: #f6f8fa;
-	box-shadow: 0 2rem 5rem -1rem rgba(137, 128, 188, 0.0618);
+	box-shadow: 0 2rem 5rem -1rem rgba(116, 109, 156, 0.0618);
 	transform: scale(1.05);
 }
 
@@ -1569,10 +1569,10 @@ img.alignright,
 	position: relative;
 	height: 40px;
 	height: 4rem;
-	border-top: 1px solid rgba(137, 128, 188, 0.3);
+	border-top: 1px solid rgba(116, 109, 156, 0.3);
 	border-bottom: 1px solid rgba(198, 202, 206, 0.3);
 	color: #3f454c;
-	background-color: #8980bc;
+	background-color: #746d9c;
 	font-size: 12px;
 	font-size: 1.2rem;
 	-ms-flex-wrap: wrap;
@@ -1845,7 +1845,7 @@ img.alignright,
 }
 
 .menu-item.button a {
-	background: #8980bc;
+	background: #746d9c;
 	padding: 1em 3em;
 	border-radius: 9rem;
 	color: #ffffff;
@@ -1873,7 +1873,7 @@ img.alignright,
 .menu-item a:hover,
 .menu-item a:focus,
 .menu-item.current-menu-item > a {
-	color: #8980bc;
+	color: #746d9c;
 }
 
 .menu-item span {
@@ -2043,7 +2043,7 @@ img.alignright,
 .site-footer .menu-item a:hover,
 .site-footer .menu-item a:focus,
 .site-footer .menu-item.current-menu-item > a {
-	color: #8980bc;
+	color: #746d9c;
 }
 
 /* ## Menu Toggle
@@ -2528,7 +2528,7 @@ img.alignright,
 
 .archive-pagination .active a {
 	background: #95cde8;
-	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
+	background: linear-gradient(135deg, #746d9c 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 	color: #ffffff;
 }
@@ -3605,7 +3605,7 @@ ul.testimonials-list h5 {
 .front-page-6,
 .before-footer {
 	background: #95cde8;
-	background: linear-gradient(135deg, #8980bc 0%, #95cde8 100%);
+	background: linear-gradient(135deg, #746d9c 0%, #95cde8 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 	border: none !important;
 	color: #ffffff;
