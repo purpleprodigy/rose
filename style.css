@@ -957,7 +957,6 @@ th {
 	height: 40rem;
 	box-shadow: 0 -5rem 10rem rgba(42, 49, 57, 0.05);
 	content: '';
-	pointer-events: none;
 }
 
 .sidebar-primary {
@@ -1708,7 +1707,6 @@ img.alignright,
 	height: 100%;
 	background: rgba(42, 49, 57, 0.5);
 	content: '';
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 
@@ -1744,19 +1742,8 @@ img.alignright,
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	pointer-events: none;
 	object-fit: cover;
 	object-position: center;
-}
-
-.woocommerce .wp-custom-header img,
-.wp-custom-header img,
-.wp-custom-header video,
-.wp-custom-header iframe {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center center;
 }
 
 .wp-custom-header iframe {
@@ -2962,7 +2949,6 @@ img.alignright,
 	margin: 0;
 	opacity: 0.236;
 	background: center/contain no-repeat url(assets/images/paper-plane.svg);
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 
@@ -3001,7 +2987,6 @@ img.alignright,
 	height: 100%;
 	background: rgba(42, 49, 57, 0.5);
 	content: '';
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 
@@ -3578,7 +3563,6 @@ ul.testimonials-list h5 {
 	height: 100%;
 	background: rgba(42, 49, 57, 0.5);
 	content: '';
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 
@@ -3608,7 +3592,6 @@ ul.testimonials-list h5 {
 	font-weight: 700;
 	text-decoration: none;
 	transform: translate(-50%, -50%);
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 
@@ -3806,7 +3789,6 @@ ul.testimonials-list h5 {
 	height: 100%;
 	background: rgba(42, 49, 57, 0.5);
 	content: '';
-	pointer-events: none;
 	transition: all 0.3s ease;
 }
 

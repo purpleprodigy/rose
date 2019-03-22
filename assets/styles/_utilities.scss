@@ -152,7 +152,6 @@ $five-sixths: 82.90598290598291%;
 		height: 100%;
 		background: $overlay;
 		content: "";
-		pointer-events: none;
 
 		@include transition;
 	}
