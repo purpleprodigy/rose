@@ -32,14 +32,14 @@ function genesis_page_archive_content() { ?>
 		<?php wp_list_pages( 'title_li=' ); ?>
 	</ul>
 
-	<h4><?php _e( 'Services:', 'genesis' ); ?></h4>
+	<h4><?php _e( 'News:', 'genesis' ); ?></h4>
 	<ul>
-		<?php wp_get_archives( 'type=postbypost&limit=100' ); ?>
-	</ul>
+        <?php wp_get_archives( 'type=postbypost&limit=100' ); ?>
+    </ul>
 
-<!--	<h4>--><?php //_e( 'Categories:', 'genesis' ); ?><!--</h4>-->
+<!--	<h4>--><?php //_e( 'News:', 'genesis' ); ?><!--</h4>-->
 <!--	<ul>-->
-<!--		--><?php //wp_list_categories( 'sort_column=name&title_li=' ); ?>
+<!--		--><?php //wp_list_categories( 'taxonomy=news' ); ?>
 <!--	</ul>-->
 
 	<?php
