@@ -584,10 +584,6 @@ input[type='submit'],
 	white-space: nowrap;
 	text-decoration: none;
 	cursor: pointer;
-	transition: all 0.3s ease;
-	background: #95cde8;
-	background: linear-gradient(135deg, #746d9c 0%, #95cde8 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr="$one", endcolorstr="$two", gradienttype=1);
 }
 
 .button:hover,

@@ -267,8 +267,8 @@ input[type="submit"],
 	text-decoration: none;
 	cursor: pointer;
 
-	@include transition;
-	@include gradient;
+	//@include transition;
+	//@include gradient;
 
 	&:hover,
 	&:focus {
