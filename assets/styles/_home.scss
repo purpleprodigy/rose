@@ -140,6 +140,7 @@
 		p {
 			max-width: map-get($breakpoints, xs);
 			line-height: 1.382;
+			color: $white;
 
 			@include breakpoint(xxs) {
 				line-height: 1.6;
