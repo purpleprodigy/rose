@@ -2903,53 +2903,6 @@ img.alignright,
 	margin-bottom: 0;
 }
 
-/* ## Genesis eNews Extended
---------------------------------------------- */
-.sidebar .enews input {
-	margin-bottom: 1em;
-}
-
-.site-footer .enews form {
-	position: relative;
-	margin-top: 0.618em;
-}
-
-.site-footer .enews input[type='text'],
-.site-footer .enews input[type='email'] {
-	margin-top: 10px;
-	margin-top: 1rem;
-}
-
-.site-footer .enews input[type='submit'] {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	padding-right: 0;
-	color: transparent;
-	background: transparent;
-	box-shadow: none;
-}
-
-.site-footer .enews input[type='submit']:hover + .send-icon,
-.site-footer .enews input[type='submit']:focus + .send-icon {
-	opacity: 1;
-}
-
-.site-footer .enews .send-icon {
-	display: block;
-	position: absolute;
-	right: 2em;
-	bottom: 1em;
-	width: 18px;
-	width: 1.8rem;
-	height: 18px;
-	height: 1.8rem;
-	margin: 0;
-	opacity: 0.236;
-	background: center/contain no-repeat url(assets/images/paper-plane.svg);
-	transition: all 0.3s ease;
-}
-
 /* ## Display Posts Listing
 --------------------------------------------- */
 .page-id-334 .display-posts-listing {
@@ -3255,6 +3208,7 @@ ul.testimonials-list h5 {
 .featuredpost h4.entry-title a {
 	font-size: 15px;
 	font-weight: normal;
+	margin-bottom: 20px;
 }
 
 /* ## Front Page
