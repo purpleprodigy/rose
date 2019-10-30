@@ -215,9 +215,9 @@ function rose_scripts_styles() {
 	// Conditionally load slider scripts.
 	if ( ! class_exists( 'SEO_Slider_Widget' ) ) {
 
-		wp_enqueue_script( CHILD_TEXT_DOMAIN . '-modernizr', CHILD_THEME_URI . '/assets/scripts/min/modernizr.min.js', array( 'jquery' ), '3.5.0', true );
+		wp_enqueue_script( CHILD_TEXT_DOMAIN . '-modernizr', CHILD_THEME_URI . '/assets/scripts/min/modernizr.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
-		wp_enqueue_script( CHILD_TEXT_DOMAIN . '-slick', CHILD_THEME_URI . '/assets/scripts/min/slick.min.js', array( 'jquery' ), '1.8.1', true );
+		wp_enqueue_script( CHILD_TEXT_DOMAIN . '-slick', CHILD_THEME_URI . '/assets/scripts/min/slick.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	}
 
@@ -229,12 +229,6 @@ function rose_scripts_styles() {
 
 	// Enqueue YouTube script.
 	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-youtube', CHILD_THEME_URI . '/assets/scripts/youtube.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-
-	// Enqueue Facebook Pixel script.
-	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-facebook', CHILD_THEME_URI . '/assets/scripts/facebook.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-
-	// Enqueue Google Analytics script.
-	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-google', CHILD_THEME_URI . '/assets/scripts/google.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	// Disable superfish args.
 	wp_deregister_script( 'superfish-args' );
