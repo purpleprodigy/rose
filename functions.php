@@ -230,6 +230,12 @@ function rose_scripts_styles() {
 	// Enqueue YouTube script.
 	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-youtube', CHILD_THEME_URI . '/assets/scripts/youtube.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
+	// Enqueue Facebook Pixel script.
+	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-facebook-pixel', CHILD_THEME_URI . '/assets/scripts/facebook-pixel.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
+	// Enqueue Google Analytics script.
+	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-google-analytics', CHILD_THEME_URI . '/assets/scripts/google-analytics.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
 	// Disable superfish args.
 	wp_deregister_script( 'superfish-args' );
 
