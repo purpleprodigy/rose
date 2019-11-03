@@ -2349,6 +2349,10 @@ img.alignright,
 	content: '“';
 }
 
+.landing-page .entry-content img.alignleft {
+	margin-right: 50px;
+}
+
 .entry-image-link {
 	display: block;
 	margin-bottom: 1em;
@@ -2392,6 +2396,11 @@ img.alignright,
 .entry-title a:hover,
 .entry-title a:focus {
 	color: #8980bc;
+}
+
+.landing-page h1.entry-title {
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 /* ## Entry Meta
