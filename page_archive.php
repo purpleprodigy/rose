@@ -27,23 +27,27 @@ add_action( 'genesis_post_content', 'genesis_page_archive_content' );
  */
 function genesis_page_archive_content() { ?>
 
-	<h4><?php _e( 'Pages:', 'genesis' ); ?></h4>
-	<ul>
+    <h4><?php _e( 'Pages:', 'genesis' ); ?></h4>
+    <ul>
 		<?php wp_list_pages( 'title_li=' ); ?>
-	</ul>
-
-	<h4><?php _e( 'News:', 'genesis' ); ?></h4>
-	<ul>
-        <?php wp_get_archives( 'type=postbypost&limit=100' ); ?>
     </ul>
 
-<!--	<h4>--><?php //_e( 'News:', 'genesis' ); ?><!--</h4>-->
-<!--	<ul>-->
-<!--		--><?php //wp_list_categories( 'taxonomy=news' ); ?>
-<!--	</ul>-->
+    <h4><?php _e( 'News:', 'genesis' ); ?></h4>
+    <ul>
+		<?php wp_get_archives( 'type=postbypost&limit=100' ); ?>
+    </ul>
+
+    <!--	<h4>--><?php //_e( 'News:', 'genesis' ); ?><!--</h4>-->
+    <!--	<ul>-->
+    <!--		--><?php //wp_list_categories( 'taxonomy=news' ); ?>
+    <!--	</ul>-->
+
 
 	<?php
 }
 
-
+// Exclude certain pages from page_archive.php
+function filter_wp_list_pages_excludes( $exclude_array ) {
+	return array_merge( $exclude_array, array(45, 1164, 1167, 1174, 1183, 1187, 1205, 1216 ) );
+}
 genesis();

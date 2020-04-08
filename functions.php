@@ -265,3 +265,5 @@ require_once CHILD_THEME_DIR . '/includes/customize.php';
 
 // Load default settings.
 require_once CHILD_THEME_DIR . '/includes/defaults.php';
+
+add_filter( 'wp_list_pages_excludes', 'filter_wp_list_pages_excludes', 10, 1 );
