@@ -3360,6 +3360,11 @@ ul.testimonials-list h5 {
 
 /* ## Front Page 3
 --------------------------------------------- */
+.front-page-3 {
+	/* ## Icon Widget
+--------------------------------------------- */
+}
+
 .front-page-3 .wrap {
 	display: -ms-flexbox;
 	display: flex;
@@ -3385,18 +3390,38 @@ ul.testimonials-list h5 {
 	margin: 5rem 0;
 }
 
-.front-page-3 .icon_widget {
+.front-page-3 .textwidget span {
+	font-weight: 900;
+	color: #746d9c;
+}
+
+.front-page-3 .icon-widget {
 	-ms-flex-item-align: start;
 	align-self: flex-start;
+	padding: 15px 25px;
 }
 
-.front-page-3 .icon_widget .widget-title {
-	font-size: 19px;
-	font-size: 1.9rem;
+.front-page-3 .icon-widget h4.widget-title {
+	color: #746d9c;
+	font-size: 16px !important;
+	font-size: 1.6rem !important;
+	padding: 20px 0 0;
 }
 
-.front-page-3 .icon_widget i {
-	display: inline-block;
+.front-page-3 .icon-widget h3 {
+	color: #95cde8;
+	font-size: 18px !important;
+	font-size: 1.8rem !important;
+}
+
+.front-page-3 .icon-widget p {
+	font-size: 14px !important;
+	font-size: 1.4rem !important;
+	text-align: left;
+}
+
+.front-page-3 .icon-widget p span {
+	font-weight: bold;
 }
 
 .front-page-3 .mejs-container {

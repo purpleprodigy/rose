@@ -296,15 +296,32 @@
 		}
 	}
 
-	.icon_widget {
+	.textwidget span {
+		font-weight: 900;
+		color: #746d9c;
+	}
+
+	/* ## Icon Widget
+--------------------------------------------- */
+	.icon-widget {
 		align-self: flex-start;
+		padding: 15px 25px;
 
-		.widget-title {
-			font-size: 1.9rem;
+		h4.widget-title {
+			color: $one;
+			font-size: 1.6rem !important;
+			padding: 20px 0 0;
 		}
-
-		i {
-			display: inline-block;
+		h3 {
+			color: $two;
+			font-size: 1.8rem !important;
+		}
+		p {
+			font-size: 1.4rem !important;
+			text-align: left;
+			span {
+				font-weight: bold;
+			}
 		}
 	}
 
