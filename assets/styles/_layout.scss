@@ -545,3 +545,94 @@
 		}
 	}
 }
+
+/* ## Work With Me Table
+--------------------------------------------- */
+
+.work-with-me {
+	display: flex;
+	margin: 0 auto;
+	border: 1px solid $one;
+	border-radius: $site-radius;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	@include clearfix;
+
+	+ .work-with-me {
+		margin: 5rem auto;
+
+		@include breakpoint(sm) {
+			margin: 10rem 0;
+		}
+	}
+
+	+ hr {
+		margin: 5rem 0;
+		padding: 0;
+
+		@include breakpoint(sm) {
+			margin: 10rem 0;
+		}
+	}
+
+	div {
+		font-size: 1.4rem;
+		padding: 3rem;
+		border-radius: $site-radius;
+		text-align: center;
+
+		@media (max-width: map-get($breakpoints, sm)) {
+			width: 100%;
+		}
+
+		ul {
+			margin: 1em 0;
+
+			li {
+				margin: 0;
+				list-style-type: none;
+			}
+		}
+	}
+
+	.featured {
+		border: 1px solid $one;
+		background-color: $light;
+		box-shadow: 0 2rem 5rem -1rem rgba($one, 0.0618);
+		transform: scale(1.05);
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	p {
+		position: relative;
+		max-width: map-get($breakpoints, sm);
+		margin: 0 auto;
+		padding: 0 5%;
+	}
+
+	strong {
+		display: block;
+		color: $accent;
+		font-weight: $bold;
+	}
+
+	em {
+		display: block;
+		color: $body;
+		font-size: small;
+	}
+
+	button,
+	.button {
+		margin-bottom: 0.5em;
+	}
+	@include breakpoint(sm) {
+		font-size: 1.6rem;
+	}
+}
+

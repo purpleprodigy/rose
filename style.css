@@ -1114,6 +1114,95 @@ th {
 	padding-left: 2em;
 }
 
+/* ## Work With Me Table
+--------------------------------------------- */
+.work-with-me {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 auto;
+	border: 1px solid #746d9c;
+	border-radius: 3px;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-align: center;
+	align-items: center;
+	clear: both;
+}
+
+.work-with-me:before,
+.work-with-me:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.work-with-me + .work-with-me {
+	margin: 50px auto;
+	margin: 5rem auto;
+}
+
+.work-with-me + hr {
+	margin: 50px 0;
+	margin: 5rem 0;
+	padding: 0;
+}
+
+.work-with-me div {
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 30px;
+	padding: 3rem;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.work-with-me div ul {
+	margin: 1em 0;
+}
+
+.work-with-me div ul li {
+	margin: 0;
+	list-style-type: none;
+}
+
+.work-with-me .featured {
+	border: 1px solid #746d9c;
+	background-color: #f6f8fa;
+	box-shadow: 0 2rem 5rem -1rem rgba(116, 109, 156, 0.0618);
+	transform: scale(1.05);
+}
+
+.work-with-me h4 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.work-with-me p {
+	position: relative;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+.work-with-me strong {
+	display: block;
+	color: #8980bc;
+	font-weight: 700;
+}
+
+.work-with-me em {
+	display: block;
+	color: #4d5968;
+	font-size: small;
+}
+
+.work-with-me button,
+.work-with-me .button {
+	margin-bottom: 0.5em;
+}
+
 /* ## Avatars
 --------------------------------------------- */
 .avatar {
@@ -2334,6 +2423,7 @@ img.alignright,
 	background-color: #ffffff;
 	text-align: center;
 	transform: translate(-50%);
+	clear: both;
 }
 
 .entry-content blockquote:before {
@@ -4146,6 +4236,15 @@ ul.testimonials-list h5 {
 	.pricing-table + hr {
 		margin: 10rem 0;
 	}
+	.work-with-me + .work-with-me {
+		margin: 10rem 0;
+	}
+	.work-with-me + hr {
+		margin: 10rem 0;
+	}
+	.work-with-me {
+		font-size: 1.6rem;
+	}
 	.author-box {
 		padding: 6rem 0;
 	}
@@ -4767,6 +4866,9 @@ ul.testimonials-list h5 {
 
 @media (max-width: 768px) {
 	.pricing-table div {
+		width: 100%;
+	}
+	.work-with-me div {
 		width: 100%;
 	}
 	.contact-page .agm-canvas {
