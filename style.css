@@ -3310,6 +3310,12 @@ ul.testimonials-list h5 {
 	margin-bottom: 20px;
 }
 
+/* ## Thrive Quiz Builder
+--------------------------------------------- */
+.tqb-question-image-container img {
+	margin: auto;
+}
+
 /* ## Front Page
 --------------------------------------------- */
 .front-page-widget {
